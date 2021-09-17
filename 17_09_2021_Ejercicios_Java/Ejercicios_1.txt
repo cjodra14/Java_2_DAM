@@ -1,0 +1,88 @@
+﻿-----------
+-----------
+EJERCICIO 1
+-----------
+-----------
+
+
+Crear un paquete geometría, y en él las siguientes clases:
+
+-----------------------------------------
+Punto: representa un punto en el plano
+-----------------------------------------
+//1. Tiene como propiedades las coordenadas x e y (números reales), que representan sus coordenadas. Existen métodos get y set para su obtención y establecimiento.
+//2. Tiene 3 constructores: 
+//- Constructor con dos parámetros correspondientes a las coordenadas x e y.
+//- Constructor por defecto: sin parámetros, por defecto inicializa al eje de coordenadas.
+//- Constructor que tiene como parámetro un punto y crea un punto que es una copia de ese punto.
+//3. Tiene 2 métodos de instancia que se llaman distancia:
+//- El primero tiene como parámetro un punto, y se calcula la distancia a él.
+//- El segundo tiene como parámetro las coordenadas x e y de un punto y se calcula la distancia a él.
+//4. Tiene un método de utilidad(estatico) que se llama distancia que calcula la distancia entre dos puntos.
+//5. Tiene un método de instancia puntoMasCercano que tiene como parámetro un array de puntos, y devuelve el punto del array más cercano.
+//6. Tiene un método de instancia trasladar, que tiene como parámetro un vector y que traslada al punto.
+//7. Tiene un método que imprime el valor del punto. Por ejemplo: (4,9).
+
+-----------------------------------------
+Vector: representa un vector en el plano.
+-----------------------------------------
+//1. Tiene como propiedades las componentes a y b (números reales), correspondientes a las direcciones de OX y OY, respectivamente. Existen métodos get y set para su obtención y establecimiento.
+//2. Tiene 4 constructores: 
+//- Constructor con dos parámetros correspondientes a las componentes a y b.
+//- Constructor con dos parámetros correspondientes a dos puntos.
+//- Constructor por defecto: sin parámetros, por defecto inicializa al vector nulo.
+//- Constructor que tiene como parámetro un vector y crea un vector que es una copia de ese vector.
+//3. Tiene un método que imprime el valor del vector. Por ejemplo: [14,2].
+
+-----------------------------------------
+Circulo: representa un círculo en el plano.
+-----------------------------------------
+//1. Tiene como propiedades el centro y el radio (punto y número real). Existen métodos get para su obtención.
+//2. Tiene tres constructores: 
+//- Constructor con dos parámetros correspondientes al centro y al radio.
+//- Constructor por defecto: sin parámetros, por defecto inicializa a un círculo de centro origen de coordenadas y radio 10 (es una constante del programa).
+//- Constructor que tiene como parámetro un círculo y crea un círculo que es una copia de ese círculo.
+//3. Tiene un método de instancia que se llama perímetro, que devuelve el perímetro del círculo.
+//4. Tiene un método de instancia que se llama área, que devuelve el área del círculo.
+//5. Tiene un método de instancia trasladar, que tiene como parámetro un vector, y que traslada el círculo trasladando el centro.
+//6. Tiene un método de instancia escalar, que tiene como parámetro un número real y cuyo efecto es multiplicar por el radio, escalando el círculo.
+//7. Tiene un método que imprime el valor del círculo. Por ejemplo: {(2,4),4}.
+
+-----------------------------------------
+Rectángulo: representa un rectángulo en el plano.
+-----------------------------------------
+//1. Tiene como propiedades los 4 vértices (puntos). Existen métodos get para su obtención.
+//2. Tiene tres constructores: 
+//- Constructor con 4 parámetros correspondientes a los 4 vértices.
+//- Constructor por defecto: sin parámetros, por defecto inicializa a un rectángulo de vértices (0,0), (5,0), (5,5) y (0,5). Son constantes en el programa.
+//- Constructor que tiene como parámetro un rectángulo y crea un rectángulo que es una copia de ese rectángulo.
+//3. Tiene un método de instancia que se llama perímetro, que devuelve el perímetro del rectángulo.
+//4. Tiene un método de instancia que se llama área, que devuelve el área del rectángulo.
+//5. Tiene un método de instancia trasladar, que tiene como parámetro un vector, y que traslada el rectángulo trasladando todos los vértices.
+//6. Tiene un método que imprime el valor del rectángulo. Por ejemplo: {(0,0),(5,0),(5,5),(0,5)}.
+
+-----------------------------------------
+Test: clase de test (tiene el main).
+-----------------------------------------
+ 
+//1. Crear el punto p1(8,5).
+//2. Crear el punto p2 origen de coordenadas.
+//3. Crear un punto p3 como copia de p1.
+//4. Imprimir valores de p1, p2 y p3.
+//5. Cambiar el valor de la x de p1 a 10.
+//6. Imprimir valores de p1, p2 y p3.
+//7. Calcula distancia entre p1 y p2. Imprimir el resultado.
+//8. Crear un array de 4 puntos: (4,5), (-2,7), (-12,12) y (2,1). Calcular el punto más cercano a p1. Imprimir el resultado.
+//9. Crear un vector a partir de p2 y p3. Trasladar el punto p1 con dicho vector. Imprimir el resultado.
+//10. Crear un círculo c1 con centro p1 y radio 4. Imprimir el resultado de c1.
+//11. Cambiar el valor de la x de p1 a 8. Imprimir el resultado de c1.
+//12. Crear un círculo c2 como copia de c1. Imprimir el resultado de c2.
+//13. Cambiar el centro de c1 a (6,4). Imprimir el resultado de c1 y c2.
+//14. Cambiar la x del centro de c1 a 9. Imprimir el resultado de c1 y c2.
+//15. Imprimir perímetro y área de c1.
+//16. Crear un vector [9,2]. Trasladar el círculo c2 con dicho vector. Imprimir el resultado.
+//17. Escalar el círculo c2 con un valor 4. Imprimir el resultado.
+//18. Crear un rectángulo r1 por defecto. Imprimir el resultado.
+//19. Imprimir perímetro y área de r1.
+//20. Crear un vector [3,-2]. Trasladar el rectángulo r1 con dicho vector. Imprimir el resultado.
+
